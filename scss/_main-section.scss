@@ -1,0 +1,92 @@
+h2{
+    font-size: $fonts / 2.5;
+    text-align: center;
+    margin: 2rem 0;
+    transition: all .3s;
+    
+    &:hover{
+        transform: translateY(-.5rem);
+    }
+}
+video{
+    max-width: 100%;
+}
+
+section.main-section{
+    
+    .content{
+        h2{
+            margin-top: 6.5rem;
+        }
+        position: relative;
+        z-index: 10;
+        color: white;
+        background: #0c1218;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+        padding: 1rem;
+        border-radius: 5px;
+
+        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+                            0 0 20px rgba(0, 0, 0, 0.1),
+                            0 0 30px rgba(0, 0, 0, 0.1),
+                            0 0 40px rgba(0, 0, 0, 0.1),
+                            0 0 50px rgba(0, 0, 0, 0.1),
+                            0 0 60px rgba(0, 0, 0, 0.1),
+                            0 0 70px rgba(0, 0, 0, 0.1),
+                            0 0 80px rgba(0, 0, 0, 0.1),
+                            0 0 90px rgba(0, 0, 0, 0.1),
+                            0 0 100px rgba(0, 0, 0, 0.1);
+*/
+
+        &:after{
+            content: '';
+            position: absolute;
+            width: 8rem;
+            height: 7rem;
+            top: 2rem;
+            left: 4rem;
+            background: url('../img/icarus2.png');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        p{
+            text-align: center;
+            font-size: $fonts / 5;
+            margin: .5rem 3rem;
+            font-weight: lighter;
+        }
+
+        .cost-video{
+            margin-top: 3rem;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            .cost-video-p{
+                flex-basis: 40%;
+                //border: 2px solid red;
+                p{
+                    text-align: center;
+                    margin: 1.5rem;
+                }
+            }
+            video{
+                width: 40%;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+                transition: all .2s ease;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                width: 10%;
+                margin-left: 6rem;
+            }
+
+        }
+    }
+}

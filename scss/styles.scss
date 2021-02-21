@@ -1,0 +1,86 @@
+@import "variables";
+@import "fonts";
+
+@import "stars";
+@import "earth";
+@import "informations";
+@import "main-section";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	height: 100%;
+	background: #131c25;
+	scroll-behavior: smooth;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: $fonts / 1.2;
+	color: white;
+}
+h2 {
+	font-family: "PT Sans", sans-serif;
+}
+p {
+	font-family: "Open Sans", sans-serif;
+}
+section {
+	margin-top: 5rem;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: white;
+	background: #0c1218;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+	padding: 1rem;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 8rem;
+		height: 7rem;
+		top: 1rem;
+		left: 2rem;
+		background: url("../img/icarus2.png");
+		background-position: center center;
+		background-size: cover;
+	}
+
+	nav {
+		margin-right: 5.7rem;
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem;
+
+		a {
+			text-transform: uppercase;
+			font-size: $fonts / 3;
+			color: white;
+			text-decoration: none;
+			font-family: "PT Sans", sans-serif;
+			transition: all 0.5s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		
+	}
+}

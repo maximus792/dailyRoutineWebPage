@@ -1,0 +1,44 @@
+.informations{
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-basis: 50%;
+
+    .borders{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info{
+        opacity: 0;
+        transform: translateY(0);
+        transition: all .2s ease;
+        position: relative;
+        margin: 1rem 4rem 20rem 4rem;
+    }
+    
+    
+
+    h3{
+        font-size: $fonts / 3;
+    }
+    p{
+        font-size: $fonts / 5;
+        margin: 1rem 0;
+        
+        span{
+            position: relative;
+            display: inline-block;
+        }
+    }
+}

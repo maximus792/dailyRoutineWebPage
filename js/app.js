@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	//variables
 	const mainSection = $(".main-section");
-	var earthFix = 5700 + $("header").innerHeight();
+	var earthFix = 3200 + $("header").innerHeight();
 
 	$(".main-section").css({ marginTop: earthFix });
 
@@ -23,10 +23,10 @@ $(document).ready(function () {
 	var fix = 1000 - $("header").innerHeight();
 	$(window).scroll(function () {
 		//console.log($(window).scrollTop());
-		show($(".info1"), 500, 6000);
-		show($(".info2"), 1000, 6000);
-		show($(".info3"), 1500, 6000);
-		show($(".info4"), 2000, 6000);
+		show($(".info1"), 500, 4000);
+		show($(".info2"), 1000, 4000);
+		show($(".info3"), 1500, 4000);
+		show($(".info4"), 2000, 4000);
 
 		if ($(window).scrollTop() >= earthFix - fix) {
 			$(".planet-section").removeClass("fix");

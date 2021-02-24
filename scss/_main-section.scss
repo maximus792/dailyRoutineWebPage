@@ -1,5 +1,5 @@
 h2{
-    font-size: $fonts / 2.5;
+    font-size: $fonts / 2;
     text-align: center;
     margin: 2rem 0;
     transition: all .3s;
@@ -16,7 +16,8 @@ section.main-section{
     
     .content{
         h2{
-            margin-top: 6.5rem;
+            margin-top: 11rem;
+            margin-bottom: 2rem;
             font-family: "PT Sans", sans-serif;
         }
         position: relative;
@@ -54,7 +55,7 @@ section.main-section{
         p{
             font-family: "Open Sans", sans-serif;
             text-align: center;
-            font-size: $fonts / 5;
+            font-size: $fonts / 3.5;
             margin: .5rem 3rem;
             font-weight: lighter;
         }
